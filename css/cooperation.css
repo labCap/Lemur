@@ -1,0 +1,180 @@
+.cooperation {
+  background: #327cc6;
+  border-radius: 0px 200px;
+}
+
+.cooperation__inner {
+  padding: 150px 0;
+}
+
+.cooperation__title {
+  color: #fff;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: translate(0, -120%);
+      -ms-transform: translate(0, -120%);
+          transform: translate(0, -120%);
+  opacity: 0;
+}
+
+.cooperation__title.__active {
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+.cooperation__line {
+  position: relative;
+  margin: 165px 0 100px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 0;
+}
+
+.cooperation__line.__active {
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+.cooperation__item {
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 0;
+  position: absolute;
+  padding-left: 80px;
+}
+
+.cooperation__item:nth-child(1).__active {
+  -webkit-transition: all 0.4s linear 0.4s;
+  -o-transition: all 0.4s linear 0.4s;
+  transition: all 0.4s linear 0.4s;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+.cooperation__item:nth-child(2).__active {
+  -webkit-transition: all 0.4s linear 0.8s;
+  -o-transition: all 0.4s linear 0.8s;
+  transition: all 0.4s linear 0.8s;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+.cooperation__item:nth-child(3).__active {
+  -webkit-transition: all 0.4s linear 1.2s;
+  -o-transition: all 0.4s linear 1.2s;
+  transition: all 0.4s linear 1.2s;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+.cooperation__item:nth-child(4).__active {
+  -webkit-transition: all 0.4s linear 1.6s;
+  -o-transition: all 0.4s linear 1.6s;
+  transition: all 0.4s linear 1.6s;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+.cooperation__item:nth-child(5).__active {
+  -webkit-transition: all 0.4s linear 2s;
+  -o-transition: all 0.4s linear 2s;
+  transition: all 0.4s linear 2s;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+.cooperation__item::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -70px;
+  left: 20px;
+  background: #fbb03b;
+}
+
+.cooperation__item:nth-child(1) {
+  top: 85px;
+  left: -15px;
+}
+
+.cooperation__item:nth-child(2) {
+  top: 285px;
+  left: 210px;
+}
+
+.cooperation__item:nth-child(2)::before {
+  top: -70px;
+  bottom: none;
+}
+
+.cooperation__item:nth-child(3) {
+  top: 6px;
+  left: 419px;
+}
+
+.cooperation__item:nth-child(4) {
+  top: 340px;
+  left: 647px;
+}
+
+.cooperation__item:nth-child(4)::before {
+  top: -70px;
+  bottom: none;
+}
+
+.cooperation__item:nth-child(5) {
+  top: -100px;
+  right: 0;
+}
+
+.cooperation__item-img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+
+.cooperation__item-text {
+  font-size: 18px;
+  line-height: 22px;
+  width: 200px;
+  color: #ffffff;
+}
+
+.cooperation__item-btn {
+  margin-top: 20px;
+  position: absolute;
+}

@@ -1,10 +1,10 @@
 .intro {
   position: relative;
   font-weight: 700;
+  height: 100vh;
 }
 
-.intro::before {
-  content: "";
+.intro__decor1 {
   width: 100%;
   height: 650px;
   left: 0px;
@@ -13,10 +13,26 @@
   z-index: -2;
   background: #327cc6;
   border-radius: 0px 0px 0px 200px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  opacity: 0;
 }
 
-.intro::after {
-  content: "";
+.intro__decor1.__active {
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  opacity: 1;
+}
+
+.intro__decor2 {
   width: 922px;
   height: 922px;
   position: absolute;
@@ -25,6 +41,23 @@
   top: -332px;
   background: #fbb03b;
   border-radius: 50%;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  opacity: 0;
+}
+
+.intro__decor2.__active {
+  -webkit-transition: all 0.4s linear 0.4s;
+  -o-transition: all 0.4s linear 0.4s;
+  transition: all 0.4s linear 0.4s;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  opacity: 1;
 }
 
 .intro__inner {
@@ -45,6 +78,23 @@
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 80px;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  opacity: 0;
+}
+
+.intro__text.__active {
+  -webkit-transition: all 0.5s linear 1.2s;
+  -o-transition: all 0.5s linear 1.2s;
+  transition: all 0.5s linear 1.2s;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  opacity: 1;
 }
 
 .intro__icos {
@@ -62,6 +112,43 @@
 .intro__ico-item {
   margin: 0 10px;
   width: 175px;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transform: translate(-120%, 0);
+      -ms-transform: translate(-120%, 0);
+          transform: translate(-120%, 0);
+  opacity: 0;
+}
+
+.intro__ico-item:nth-child(1).__active {
+  -webkit-transition: all 0.4s linear 1.3s;
+  -o-transition: all 0.4s linear 1.3s;
+  transition: all 0.4s linear 1.3s;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+.intro__ico-item:nth-child(2).__active {
+  -webkit-transition: all 0.4s linear 1.6s;
+  -o-transition: all 0.4s linear 1.6s;
+  transition: all 0.4s linear 1.6s;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+.intro__ico-item:nth-child(3).__active {
+  -webkit-transition: all 0.4s linear 1.9s;
+  -o-transition: all 0.4s linear 1.9s;
+  transition: all 0.4s linear 1.9s;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
 }
 
 .intro__ico-text {
@@ -76,11 +163,28 @@
   position: absolute;
   top: 110px;
   right: -110px;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  opacity: 0;
 }
 
 .intro__img-box img {
   height: 100%;
   width: 100%;
+}
+
+.intro__img-box.__active {
+  -webkit-transition: all 0.5s linear 1s;
+  -o-transition: all 0.5s linear 1s;
+  transition: all 0.5s linear 1s;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  opacity: 1;
 }
 
 .intro__arrow-down {
@@ -90,11 +194,28 @@
   width: 40px;
   height: 60px;
   cursor: pointer;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  opacity: 0;
 }
 
 .intro__arrow-down img {
   width: 100%;
   height: 100%;
+}
+
+.intro__arrow-down.__active {
+  -webkit-transition: all 0.5s linear 1s;
+  -o-transition: all 0.5s linear 1s;
+  transition: all 0.5s linear 1s;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  opacity: 1;
 }
 
 .ico {
