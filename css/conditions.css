@@ -52,7 +52,7 @@
   color: #fff;
   padding: 40px 30px 30px;
   max-width: 410px;
-  margin: 0 20px;
+  margin: 20px;
   -webkit-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear;
@@ -141,4 +141,11 @@
       -ms-transform: translate(0, 0);
           transform: translate(0, 0);
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .conditions__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }

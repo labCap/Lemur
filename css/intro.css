@@ -10,7 +10,7 @@
   left: 0px;
   top: 0px;
   position: absolute;
-  z-index: -2;
+  z-index: -3;
   background: #327cc6;
   border-radius: 0px 0px 0px 200px;
   -webkit-transition: all 0.3s linear;
@@ -36,7 +36,7 @@
   width: 922px;
   height: 922px;
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   right: -100px;
   top: -332px;
   background: #fbb03b;
@@ -65,6 +65,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
 }
 
@@ -191,8 +193,8 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 40px;
-  height: 60px;
+  font-size: 60px;
+  color: #327cc6;
   cursor: pointer;
   -webkit-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
@@ -201,11 +203,6 @@
       -ms-transform: none;
           transform: none;
   opacity: 0;
-}
-
-.intro__arrow-down img {
-  width: 100%;
-  height: 100%;
 }
 
 .intro__arrow-down.__active {
@@ -233,4 +230,82 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    height: auto;
+  }
+
+  .intro__decor1 {
+    height: 800px;
+    border-radius: 0px;
+  }
+
+  .intro__decor2 {
+    width: 558px;
+    height: 558px;
+    right: -115px;
+    bottom: -175px;
+    top: auto;
+  }
+
+  .intro__inner {
+    padding-top: 130px;
+  }
+
+  .intro__text {
+    width: 386px;
+    margin-bottom: 200px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .intro__icos {
+    margin-bottom: 12px;
+  }
+
+  .intro__ico-text {
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .intro__img-box {
+    width: 666.67px;
+    height: 449.94px;
+    top: 337px;
+    z-index: -1;
+  }
+
+  .intro__arrow-down {
+    top: 133px;
+    right: 65px;
+    width: 40px;
+    height: 60px;
+    left: auto;
+    bottom: auto;
+    color: #fff;
+  }
+}
+
+@media (max-width: 475px) {
+  .intro__text {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 100px;
+  }
+
+  .intro__img-box {
+    top: 326px;
+  }
+
+  .intro__arrow-down {
+    display: none;
+  }
+
+  .ico {
+    width: 110px;
+    height: 110px;
+  }
 }

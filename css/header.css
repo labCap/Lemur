@@ -78,8 +78,19 @@
           align-items: center;
 }
 
+.logo {
+  width: 196px;
+  height: 58.5px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
 .language {
   margin-left: 30px;
+  margin-bottom: 15px;
 }
 
 .language__item {
@@ -99,4 +110,23 @@
 .language__item:hover {
   color: #327cc6;
   background: #fff;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 140px;
+    height: 41.79px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }

@@ -31,6 +31,9 @@
 .cooperation__line {
   position: relative;
   margin: 165px 0 100px;
+  height: 290px;
+  width: 899px;
+  background: url("../img/cooperation/line.png") no-repeat center;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -150,12 +153,12 @@
 
 .cooperation__item:nth-child(4)::before {
   top: -70px;
-  bottom: none;
+  bottom: auto;
 }
 
 .cooperation__item:nth-child(5) {
   top: -100px;
-  right: 0;
+  right: -250px;
 }
 
 .cooperation__item-img {
@@ -177,4 +180,98 @@
 .cooperation__item-btn {
   margin-top: 20px;
   position: absolute;
+}
+
+@media (max-width: 768px) {
+  .cooperation__line {
+    margin-top: 255px;
+    height: 246px;
+    width: 410px;
+    background: url("../img/cooperation/line1.png") no-repeat center;
+  }
+
+  .cooperation__item {
+    padding-left: 0;
+  }
+
+  .cooperation__item:nth-child(1) {
+    top: 6px;
+    left: -13px;
+  }
+
+  .cooperation__item:nth-child(2) {
+    top: 250px;
+    left: 65px;
+  }
+
+  .cooperation__item:nth-child(3) {
+    top: -80px;
+    left: 170px;
+  }
+
+  .cooperation__item:nth-child(4) {
+    top: 300px;
+    left: 275px;
+  }
+
+  .cooperation__item:nth-child(5) {
+    top: -175px;
+    right: -177px;
+  }
+
+  .cooperation__item-img {
+    position: static;
+  }
+
+  .cooperation__item-btn {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 475px) {
+  .cooperation__line {
+    height: 818px;
+    border-left: 5px solid #29abe2;
+    background: none;
+  }
+
+  .cooperation__item::before {
+    bottom: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: -70px;
+  }
+}
+
+@media (max-width: 375px) {
+  .cooperation__item:nth-child(1) {
+    top: 6px;
+    left: 56px;
+  }
+
+  .cooperation__item:nth-child(2) {
+    top: 200px;
+    left: 56px;
+  }
+
+  .cooperation__item:nth-child(3) {
+    top: 436px;
+    left: 56px;
+  }
+
+  .cooperation__item:nth-child(4) {
+    top: 595px;
+    left: 56px;
+  }
+
+  .cooperation__item:nth-child(4)::before {
+    top: auto;
+  }
+
+  .cooperation__item:nth-child(5) {
+    top: auto;
+    bottom: -80px;
+    left: 56px;
+  }
 }
